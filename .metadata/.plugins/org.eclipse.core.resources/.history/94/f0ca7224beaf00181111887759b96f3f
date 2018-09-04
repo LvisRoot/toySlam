@@ -1,0 +1,28 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Sep 2, 2018
+ *      Author: l_vis
+ */
+
+#include <vector>
+#include "Eigen/Core"
+
+
+using namespace Eigen;
+
+Matrix2d computePointJack(const Vector2d t_point, const Vector2d t_pose){
+
+	double dx = 1 /(t_point.x() - t_pose.x());
+}
+
+Matrix2d computeJack(const std::vector<Vector2d> t_points, const std::vector<Vector2d> t_poses,){
+
+}
+
+int main(int argc, char **argv) {
+
+}
+
+
+

@@ -1,0 +1,417 @@
+18:12:36 **** Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:14:73: error: expected identifier before ‘)’ token
+ Matrix2d computePointJack(const Vector2d t_point, const Vector2d t_pose,){
+                                                                         ^
+../src/main.cpp: In function ‘Eigen::Matrix2d computePointJack(Eigen::Vector2d, Eigen::Vector2d, int)’:
+../src/main.cpp:16:9: warning: unused variable ‘dx’ [-Wunused-variable]
+  double dx = 1 /(t_point.x() - t_pose.x());
+         ^
+../src/main.cpp:17:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cpp: At global scope:
+../src/main.cpp:19:96: error: expected identifier before ‘)’ token
+ Matrix2d computeJack(const std::vector<Vector2d> t_points, const std::vector<Vector2d> t_poses,){
+                                                                                                ^
+../src/main.cpp: In function ‘Eigen::Matrix2d computeJack(std::vector<Eigen::Matrix<double, 2, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >, int)’:
+../src/main.cpp:21:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:12:52 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘Eigen::Matrix2d computePointJack(Eigen::Vector2d, Eigen::Vector2d)’:
+../src/main.cpp:16:9: warning: unused variable ‘dx’ [-Wunused-variable]
+  double dx = 1 /(t_point.x() - t_pose.x());
+         ^
+../src/main.cpp:17:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cpp: At global scope:
+../src/main.cpp:19:96: error: expected identifier before ‘)’ token
+ Matrix2d computeJack(const std::vector<Vector2d> t_points, const std::vector<Vector2d> t_poses,){
+                                                                                                ^
+../src/main.cpp: In function ‘Eigen::Matrix2d computeJack(std::vector<Eigen::Matrix<double, 2, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >, int)’:
+../src/main.cpp:21:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+18:13:03 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘Eigen::Matrix2d computePointJack(Eigen::Vector2d, Eigen::Vector2d)’:
+../src/main.cpp:16:9: warning: unused variable ‘dx’ [-Wunused-variable]
+  double dx = 1 /(t_point.x() - t_pose.x());
+         ^
+../src/main.cpp:17:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cpp: In function ‘Eigen::Matrix2d computeJack(std::vector<Eigen::Matrix<double, 2, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >)’:
+../src/main.cpp:21:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+18:13:35 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘Eigen::Matrix2d computePointJack(const Vector2d&, const Vector2d&)’:
+../src/main.cpp:16:9: warning: unused variable ‘dx’ [-Wunused-variable]
+  double dx = 1 /(t_point.x() - t_pose.x());
+         ^
+../src/main.cpp:17:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cpp: In function ‘Eigen::Matrix2d computeJack(std::vector<Eigen::Matrix<double, 2, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >)’:
+../src/main.cpp:21:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+18:14:14 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘Eigen::Matrix2d computePointJack(const Vector2d&, const Vector2d&)’:
+../src/main.cpp:16:37: error: invalid operands of types ‘<unresolved overloaded function type>’ and ‘<unresolved overloaded function type>’ to binary ‘operator-’
+  double dx = 1 /(t_point.x - t_pose.x);
+                                     ^
+../src/main.cpp:16:9: warning: unused variable ‘dx’ [-Wunused-variable]
+  double dx = 1 /(t_point.x - t_pose.x);
+         ^
+../src/main.cpp:17:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cpp: In function ‘Eigen::Matrix2d computeJack(std::vector<Eigen::Matrix<double, 2, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >)’:
+../src/main.cpp:21:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:14:24 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘Eigen::Matrix2d computePointJack(const Vector2d&, const Vector2d&)’:
+../src/main.cpp:16:9: warning: unused variable ‘dx’ [-Wunused-variable]
+  double dx = 1 /(t_point.x() - t_pose.x());
+         ^
+../src/main.cpp:17:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cpp: In function ‘Eigen::Matrix2d computeJack(std::vector<Eigen::Matrix<double, 2, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >)’:
+../src/main.cpp:21:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+18:15:31 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+make: Nothing to be done for 'all'.
+18:53:50 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘Eigen::MatrixXd computeJack(std::vector<Eigen::Matrix<double, 2, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >)’:
+../src/main.cpp:42:20: error: invalid types ‘Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, -1>, 1>::Scalar {aka double}[int]’ for array subscript
+    jack[2*j][nP*j+i] = computePoseJack(t_points[i],t_poses[j]);
+                    ^
+../src/main.cpp:44:25: error: invalid types ‘Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, -1>, 1>::Scalar {aka double}[int]’ for array subscript
+    jack[2*mT*2*i][nP*j+i] = computePoseJack(t_points[i],t_poses[j]);
+                         ^
+In file included from /home/l_vis/Programas/Eigen_3.3.5/Eigen/Core:366:0,
+                 from ../src/main.cpp:11:
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘Eigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::operator[](Eigen::Index) [with Derived = Eigen::Matrix<double, -1, -1>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = double; Eigen::Index = long int]’:
+../src/main.cpp:42:12:   required from here
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/StaticAssert.h:33:40: error: static assertion failed: THE_BRACKET_OPERATOR_IS_ONLY_FOR_VECTORS__USE_THE_PARENTHESIS_OPERATOR_INSTEAD
+     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(X,#MSG);
+                                        ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h:406:7: note: in expansion of macro ‘EIGEN_STATIC_ASSERT’
+       EIGEN_STATIC_ASSERT(Derived::IsVectorAtCompileTime,
+       ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:56:21 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘Eigen::MatrixXd computeJack(std::vector<Eigen::Matrix<double, 2, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >)’:
+../src/main.cpp:44:28: error: no match for call to ‘(Eigen::MatrixXd {aka Eigen::Matrix<double, -1, -1>}) (int, int, int, int)’
+    jack(2*mT*2*i,nP*j+i,2,1) = computePoseJack(t_points[i],t_poses[j]);
+                            ^
+In file included from /home/l_vis/Programas/Eigen_3.3.5/Eigen/Core:434:0,
+                 from ../src/main.cpp:11:
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h:115:41: note: candidate: Eigen::DenseCoeffsBase<Derived, 0>::CoeffReturnType Eigen::DenseCoeffsBase<Derived, 0>::operator()(Eigen::Index, Eigen::Index) const [with Derived = Eigen::Matrix<double, -1, -1>; Eigen::DenseCoeffsBase<Derived, 0>::CoeffReturnType = const double&; Eigen::Index = long int]
+     EIGEN_STRONG_INLINE CoeffReturnType operator()(Index row, Index col) const
+                                         ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h:115:41: note:   candidate expects 2 arguments, 4 provided
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h:178:5: note: candidate: Eigen::DenseCoeffsBase<Derived, 0>::CoeffReturnType Eigen::DenseCoeffsBase<Derived, 0>::operator()(Eigen::Index) const [with Derived = Eigen::Matrix<double, -1, -1>; Eigen::DenseCoeffsBase<Derived, 0>::CoeffReturnType = const double&; Eigen::Index = long int]
+     operator()(Index index) const
+     ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h:178:5: note:   candidate expects 1 argument, 4 provided
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h:423:5: note: candidate: Eigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::operator()(Eigen::Index) [with Derived = Eigen::Matrix<double, -1, -1>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = double; Eigen::Index = long int]
+     operator()(Index index)
+     ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h:423:5: note:   candidate expects 1 argument, 4 provided
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h:362:5: note: candidate: Eigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::operator()(Eigen::Index, Eigen::Index) [with Derived = Eigen::Matrix<double, -1, -1>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = double; Eigen::Index = long int]
+     operator()(Index row, Index col)
+     ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/DenseCoeffsBase.h:362:5: note:   candidate expects 2 arguments, 4 provided
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+18:56:36 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+18:56:40 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+make: Nothing to be done for 'all'.
+18:59:01 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+19:00:51 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+19:01:26 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+19:03:55 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+19:04:59 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+make: Nothing to be done for 'all'.
+23:54:40 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:67:45: warning: multi-character character constant [-Wmultichar]
+  std::cout << "Jacobian Mat: /n" << jack << '/n';//computePoseJack(points[0],poses[0]);
+                                             ^
+../src/main.cpp:69:65: warning: multi-character character constant [-Wmultichar]
+  std::cout << "\nHessian Mat: /n" << jack.transpose() * jack << '/n';
+                                                                 ^
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+23:55:08 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:69:65: warning: multi-character character constant [-Wmultichar]
+  std::cout << "\nHessian Mat: \n" << jack.transpose() * jack << '/n';
+                                                                 ^
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+23:55:29 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+23:59:22 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from /home/l_vis/Programas/Eigen_3.3.5/Eigen/Core:366:0,
+                 from ../src/main.cpp:11:
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/Dot.h: In instantiation of ‘typename Eigen::ScalarBinaryOpTraits<typename Eigen::internal::traits<T>::Scalar, typename Eigen::internal::traits<OtherDerived>::Scalar>::ReturnType Eigen::MatrixBase<Derived>::dot(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = Eigen::Matrix<double, -1, -1>; Derived = Eigen::Transpose<Eigen::Matrix<double, -1, -1> >; typename Eigen::ScalarBinaryOpTraits<typename Eigen::internal::traits<T>::Scalar, typename Eigen::internal::traits<OtherDerived>::Scalar>::ReturnType = double]’:
+../src/main.cpp:69:63:   required from here
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/StaticAssert.h:33:40: error: static assertion failed: YOU_TRIED_CALLING_A_VECTOR_METHOD_ON_A_MATRIX
+     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(X,#MSG);
+                                        ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/StaticAssert.h:140:3: note: in expansion of macro ‘EIGEN_STATIC_ASSERT’
+   EIGEN_STATIC_ASSERT(TYPE::IsVectorAtCompileTime, \
+   ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/Dot.h:74:3: note: in expansion of macro ‘EIGEN_STATIC_ASSERT_VECTOR_ONLY’
+   EIGEN_STATIC_ASSERT_VECTOR_ONLY(Derived)
+   ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/StaticAssert.h:33:40: error: static assertion failed: YOU_TRIED_CALLING_A_VECTOR_METHOD_ON_A_MATRIX
+     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(X,#MSG);
+                                        ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/StaticAssert.h:140:3: note: in expansion of macro ‘EIGEN_STATIC_ASSERT’
+   EIGEN_STATIC_ASSERT(TYPE::IsVectorAtCompileTime, \
+   ^
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/Dot.h:75:3: note: in expansion of macro ‘EIGEN_STATIC_ASSERT_VECTOR_ONLY’
+   EIGEN_STATIC_ASSERT_VECTOR_ONLY(OtherDerived)
+   ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:59:52 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+00:00:42 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+00:05:00 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+00:09:07 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+00:11:20 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+00:34:22 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 
+00:34:42 **** Incremental Build of configuration Debug for project toyBA ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: toyBA
+Invoking: GCC C++ Linker
+g++  -o "toyBA"  ./src/main.o   
+Finished building target: toyBA
+ 

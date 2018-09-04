@@ -1,0 +1,7 @@
+714=1
+Automatically\ import\ libraries=true
+Build\ before\ upload\ option=ASK
+Open\ serial\ connections\ with\ the\ monitor=true
+Private\ Library\ Path=/home/l_vis/Arduino/libraries\:
+Private\ hardware\ Path=/home/l_vis/Arduino/hardware\:
+eclipse.preferences.version=1

@@ -1,0 +1,53 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Sep 2, 2018
+ *      Author: l_vis
+ */
+
+#include <vector>
+#include "Eigen/Core"
+
+
+using namespace Eigen;
+
+Vector2d computePointJack(const Vector2d & t_point, const Vector2d & t_pose){
+
+	double dx = 1 /(t_point[1] - t_pose[1]);
+	double dz = (t_point[0] - t_pose[0]) * dx * dx;
+
+	return Vector2d(-dx,dz);
+}
+
+Vector2d computePoseJack(const Vector2d & t_point, const Vector2d & t_pose){
+
+	double dx = 1 /(t_point[1] - t_pose[1]);
+	double dz = (t_point[0] - t_pose[0]) * dx * dx;
+
+	return Vector2d(dx,-dz);;
+}
+
+MatrixXd computeJack(const std::vector<Vector2d> t_points, const std::vector<Vector2d> t_poses){
+
+	int nP = t_points.size();
+	int mT = t_poses.size();
+
+	MatrixXd jack(2*(nP+mT),nP*mT);
+
+	for(int j = 0; j < mT ; ++j){
+		for(int i = 0; i < nP ; ++i){
+
+			jack[2*j][nP*j+i] = computePoseJack(t_points[i],t_poses[j]);
+
+			jack[2*mT*2*i][nP*j+i] = computePoseJack(t_points[i],t_poses[j]);
+		}
+	}
+	return jack;
+}
+
+int main(int argc, char **argv) {
+
+}
+
+
+
