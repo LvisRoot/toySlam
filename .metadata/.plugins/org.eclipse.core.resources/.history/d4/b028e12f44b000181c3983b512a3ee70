@@ -1,0 +1,112 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Sep 2, 2018
+ *      Author: l_vis
+ */
+
+#include <vector>
+#include <iostream>
+
+#include "Eigen/Core"
+
+
+const static double E_TOL = 0;
+const static int N_IT_MAX = 100;
+
+using namespace Eigen;
+
+Vector2d computePointJack(const Vector2d & t_point, const Vector2d & t_pose){
+
+	double dx = 1 /(t_point[1] - t_pose[1]);
+	double dz = (t_point[0] - t_pose[0]) * dx * dx;
+
+	return Vector2d(-dx,dz);
+}
+
+Vector2d computePoseJack(const Vector2d & t_point, const Vector2d & t_pose){
+
+	double dx = 1 /(t_point[1] - t_pose[1]);
+	double dz = (t_point[0] - t_pose[0]) * dx * dx;
+
+	return Vector2d(dx,-dz);;
+}
+
+MatrixXd computeJack(const std::vector<Vector2d> & t_points, const std::vector<Vector2d> & t_poses){
+
+	int nP = t_points.size();
+	int mT = t_poses.size();
+
+	MatrixXd jack(nP*mT,2*(nP+mT));
+
+	for(int j = 0; j < mT ; ++j){
+		for(int i = 0; i < nP ; ++i){
+
+			jack.block(nP*j+i,2*j,1,2) = computePoseJack(t_points[i],t_poses[j]).transpose();
+
+			jack.block(nP*j+i,2*mT+2*i,1,2) = computePointJack(t_points[i],t_poses[j]).transpose();
+		}
+	}
+	return jack;
+}
+
+double gnOpt(std::vector<Vector2d> & t_points, std::vector<Vector2d> & t_poses, int t_nIt = N_IT_MAX){
+
+	if(t_nIt > N_IT_MAX)
+		t_nIt = N_IT_MAX;
+
+
+	Map<MatrixXd> state (t_poses[0].data(),2*(t_poses.size()+t_points.size()),1);
+	//Map<MatrixXd> state (t_poses[0].data(),2*t_poses.size(),1);
+	state <<	Map<MatrixXd> (t_poses[0].data(),t_poses.size()*2,1),
+				Map<MatrixXd> (t_points[0].data(),t_points.size()*2,1);
+
+	//state	{	Map<MatrixXd>(t_poses[0].data(), 2*t_poses.size(),1),
+	//						Map<MatrixXd>(t_poses[0].data(), 2*t_poses.size(),1)};
+
+	std::cout << "\n Mapped Points: \n" << state << '\n';
+	std::cout << "\n Mapped Points: \n" << state << '\n';
+
+	delete state;
+
+	return 0;
+}
+
+int main(int argc, char **argv) {
+
+	int nP = atoi(argv[1]);
+	int mT = atoi(argv[2]);
+
+	std::vector<Vector2d> points, poses;
+
+	for (int i = 0; i < nP; ++i) {
+		points.push_back(Vector2d::Random());
+	}
+
+	for (int j = 0; j < mT; ++j) {
+		poses.push_back(Vector2d::Random());
+	}
+
+	MatrixXd jack = computeJack(points,poses);
+
+	//std::cout << "Jacobian Mat: \n" << jack << '\n';//computePoseJack(points[0],poses[0]);
+	//std::cout << "JacobianT Mat: \n" << jack.transpose() << '\n';//computePoseJack(points[0],poses[0]);
+
+	//std::cout << "\nHessian Mat: \n" << jack.transpose() * jack << '\n';
+
+	//Map<Matrix<double,2*points.size(),1>> state (points[0].data(),2);
+
+//	for (int i = 0; i < points.size(); ++i) {
+//		std::cout << points[i] << '\n';
+//	}
+//
+//	Map<MatrixXd> state (points[0].data(),points.size()*2,1);
+//
+//	std::cout << "\n Mapped Points: \n" << state << '\n';
+
+	gnOpt(points,poses);
+
+}
+
+
+

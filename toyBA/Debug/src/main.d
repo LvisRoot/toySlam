@@ -1,4 +1,5 @@
-src/main.o: ../src/main.cpp /home/l_vis/Programas/Eigen_3.3.5/Eigen/Core \
+src/main.o: ../src/main.cpp /home/l_vis/Programas/Eigen_3.3.5/Eigen/Dense \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/Core \
  /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/DisableStupidWarnings.h \
  /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/Macros.h \
  /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/MKL_support.h \
@@ -110,7 +111,70 @@ src/main.o: ../src/main.cpp /home/l_vis/Programas/Eigen_3.3.5/Eigen/Core \
  /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/Reverse.h \
  /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/ArrayWrapper.h \
  /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/GlobalFunctions.h \
- /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/ReenableStupidWarnings.h
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/LU \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/misc/Kernel.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/misc/Image.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/FullPivLU.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/PartialPivLU.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/Determinant.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/InverseImpl.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/arch/Inverse_SSE.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/Cholesky \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/Jacobi \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Jacobi/Jacobi.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Cholesky/LLT.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Cholesky/LDLT.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/QR \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/Householder \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Householder/Householder.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Householder/HouseholderSequence.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Householder/BlockHouseholder.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/QR/HouseholderQR.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/QR/FullPivHouseholderQR.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/QR/ColPivHouseholderQR.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/SVD \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/misc/RealSvd2x2.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/SVD/UpperBidiagonalization.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/SVD/SVDBase.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/SVD/JacobiSVD.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/SVD/BDCSVD.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/Geometry \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/OrthoMethods.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/EulerAngles.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Homogeneous.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/RotationBase.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Rotation2D.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Quaternion.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/AngleAxis.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Transform.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Translation.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Scaling.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Hyperplane.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/ParametrizedLine.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/AlignedBox.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Umeyama.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/arch/Geometry_SSE.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/Eigenvalues \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/RealSchur.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/EigenSolver.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./RealSchur.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./Tridiagonalization.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./ComplexSchur.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/RealQZ.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./RealQZ.h \
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/Dense:
 
 /home/l_vis/Programas/Eigen_3.3.5/Eigen/Core:
 
@@ -337,3 +401,125 @@ src/main.o: ../src/main.cpp /home/l_vis/Programas/Eigen_3.3.5/Eigen/Core \
 /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/GlobalFunctions.h:
 
 /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/LU:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/misc/Kernel.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/misc/Image.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/FullPivLU.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/PartialPivLU.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/Determinant.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/InverseImpl.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/LU/arch/Inverse_SSE.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/Cholesky:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/Jacobi:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Jacobi/Jacobi.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Cholesky/LLT.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Cholesky/LDLT.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/QR:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/Householder:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Householder/Householder.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Householder/HouseholderSequence.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Householder/BlockHouseholder.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/QR/HouseholderQR.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/QR/FullPivHouseholderQR.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/QR/ColPivHouseholderQR.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/SVD:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/misc/RealSvd2x2.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/SVD/UpperBidiagonalization.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/SVD/SVDBase.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/SVD/JacobiSVD.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/SVD/BDCSVD.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/Geometry:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/OrthoMethods.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/EulerAngles.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Homogeneous.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/RotationBase.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Rotation2D.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Quaternion.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/AngleAxis.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Transform.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Translation.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Scaling.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Hyperplane.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/ParametrizedLine.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/AlignedBox.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/Umeyama.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Geometry/arch/Geometry_SSE.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/Eigenvalues:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/Tridiagonalization.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/RealSchur.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./HessenbergDecomposition.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/EigenSolver.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./RealSchur.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./Tridiagonalization.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/ComplexSchur.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./ComplexSchur.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/RealQZ.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./RealQZ.h:
+
+/home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
