@@ -1,4 +1,4 @@
-14:44:41 **** Incremental Build of configuration Debug for project toyBA ****
+00:50:51 **** Incremental Build of configuration Debug for project toyBA ****
 make all 
 Building file: ../src/main.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++  -o "toyBA"  ./src/main.o
 Finished building target: toyBA
  
 
-14:44:48 Build Finished (took 7s.212ms)
+00:50:59 Build Finished (took 7s.680ms)
 

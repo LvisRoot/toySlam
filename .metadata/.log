@@ -753,3 +753,96 @@ java.io.FileNotFoundException: /home/l_vis/git/toySlam/toyBA/Debug/toyBA not fou
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2018-09-04 15:31:42.308 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-09-04 15:31:56.602
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.launch 4 104 2018-09-04 17:39:00.798
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/l_vis/Codigos/toySlam/toyBA/Debug/toyBA not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate2.verifyProgramPath(AbstractCLaunchDelegate2.java:681)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.checkBinaryDetails(LocalRunLaunchDelegate.java:266)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:88)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 104 2018-09-04 17:39:00.825
+!MESSAGE /home/l_vis/Codigos/toySlam/toyBA/Debug/toyBA not found
+!STACK 0
+java.io.FileNotFoundException: /home/l_vis/Codigos/toySlam/toyBA/Debug/toyBA not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate2.verifyProgramPath(AbstractCLaunchDelegate2.java:681)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.checkBinaryDetails(LocalRunLaunchDelegate.java:266)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:88)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2018-09-04 23:46:57.668 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-09-04 23:47:11.880
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.codan.checkers 4 0 2018-09-05 00:21:58.577
+!MESSAGE assertion failed: 
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.cdt.core.parser.util.ArrayUtil.appendAt(ArrayUtil.java:164)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPUsingDeclaration.getDelegates(PDOMCPPUsingDeclaration.java:97)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPTemplates.createSpecialization(CPPTemplates.java:1085)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPClassSpecialization.specializeMember(PDOMCPPClassSpecialization.java:156)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.AbstractCPPClassSpecializationScope.getBindings(AbstractCPPClassSpecializationScope.java:130)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPSemantics.getBindingsFromScope(CPPSemantics.java:1300)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.BaseClassLookup.lookupInBaseClass(BaseClassLookup.java:199)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.BaseClassLookup.lookupInBaseClass(BaseClassLookup.java:261)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.BaseClassLookup.lookupInBaseClass(BaseClassLookup.java:261)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.BaseClassLookup.lookupInBaseClasses(BaseClassLookup.java:62)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPSemantics.lookup(CPPSemantics.java:1065)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPSemantics.findOverloadedOperator(CPPSemantics.java:3614)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPSemantics.findOverloadedBinaryOperator(CPPSemantics.java:3327)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalBinary.computeOverload(EvalBinary.java:281)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalBinary.getOverload(EvalBinary.java:262)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTBinaryExpression.getOverload(CPPASTBinaryExpression.java:267)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTBinaryExpression.getImplicitNames(CPPASTBinaryExpression.java:130)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTBinaryExpression.accept(CPPASTBinaryExpression.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTExpressionStatement.accept(CPPASTExpressionStatement.java:70)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTCompoundStatement.accept(CPPASTCompoundStatement.java:94)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTForStatement.accept(CPPASTForStatement.java:152)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTCompoundStatement.accept(CPPASTCompoundStatement.java:94)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTFunctionDefinition.accept(CPPASTFunctionDefinition.java:221)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:265)
+	at org.eclipse.cdt.codan.internal.checkers.ProblemBindingChecker.processAst(ProblemBindingChecker.java:80)
+	at org.eclipse.cdt.codan.core.cxx.model.AbstractIndexAstChecker.processModel(AbstractIndexAstChecker.java:117)
+	at org.eclipse.cdt.codan.internal.core.CodanRunner.processResource(CodanRunner.java:91)
+	at org.eclipse.cdt.codan.internal.core.CodanRunner.runInEditor(CodanRunner.java:46)
+	at org.eclipse.cdt.codan.internal.core.CodanBuilder.processResource(CodanBuilder.java:126)
+	at org.eclipse.cdt.codan.core.cxx.internal.model.CxxCodanReconciler.reconciledAst(CxxCodanReconciler.java:37)
+	at org.eclipse.cdt.codan.internal.ui.cxx.CodanCReconciler.reconciled(CodanCReconciler.java:57)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3096)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
