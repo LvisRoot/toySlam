@@ -172,7 +172,9 @@ src/main.o: ../src/main.cpp /home/l_vis/Programas/Eigen_3.3.5/Eigen/Dense \
  /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/RealQZ.h \
  /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./RealQZ.h \
- /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /home/l_vis/git/toySlam/toyBA/inc/ba.h \
+ /home/l_vis/git/toySlam/toyBA/inc/baWP.h
 
 /home/l_vis/Programas/Eigen_3.3.5/Eigen/Dense:
 
@@ -523,3 +525,7 @@ src/main.o: ../src/main.cpp /home/l_vis/Programas/Eigen_3.3.5/Eigen/Dense \
 /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/./RealQZ.h:
 
 /home/l_vis/Programas/Eigen_3.3.5/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/home/l_vis/git/toySlam/toyBA/inc/ba.h:
+
+/home/l_vis/git/toySlam/toyBA/inc/baWP.h:

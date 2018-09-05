@@ -1,15 +1,15 @@
-00:50:51 **** Incremental Build of configuration Debug for project toyBA ****
+12:55:20 **** Incremental Build of configuration Debug for project toyBA ****
 make all 
 Building file: ../src/main.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+g++ -std=c++0x -I/home/l_vis/Programas/Eigen_3.3.5 -I"/home/l_vis/git/toySlam/toyBA/inc" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
 Finished building: ../src/main.cpp
  
 Building target: toyBA
 Invoking: GCC C++ Linker
-g++  -o "toyBA"  ./src/main.o   
+g++  -o "toyBA"  ./src/ba.o ./src/baWithPrior.o ./src/main.o   
 Finished building target: toyBA
  
 
-00:50:59 Build Finished (took 7s.680ms)
+12:55:23 Build Finished (took 3s.256ms)
 
